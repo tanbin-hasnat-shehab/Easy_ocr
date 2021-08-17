@@ -14,7 +14,7 @@ def main():
     choice = st.sidebar.selectbox("Pick something fun", activities)
     if choice == "Home":
         st.write("Go to the About section from the sidebar to learn more about it.")
-        image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
+	image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
 	reader=ocr.Reader(['en','bn'])
 	results=reader.readtext(image_file)
 	text=''

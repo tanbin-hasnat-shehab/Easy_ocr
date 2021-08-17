@@ -15,7 +15,6 @@ def main():
     if choice == "Home":
         st.write("Go to the About section from the sidebar to learn more about it.")
         image_file = st.file_uploader("Upload image", type=['jpeg', 'png', 'jpg', 'webp'])
-        print(type(image_file))
 	reader=ocr.Reader(['en','bn'])
 	results=reader.readtext(image_file)
 	text=''

@@ -22,8 +22,8 @@ def main():
 	for result in results:
 		text+=result[1] + '\n'
 	st.write(text)
-    elif choice == "About":
-        about()
+elif choice == "About":
+	about()
 
 if __name__ == "__main__":
     main()
